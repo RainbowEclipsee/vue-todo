@@ -2,8 +2,9 @@
   <div>
     <ul>
       <TodoItem 
-      v-for="todo in todos" 
-      v-bind:todo='todo' 
+      v-for="(todo, i) in todos" 
+      v-bind:todo='todo'
+      v-bind:index="i"
       :key="todo"
       v-on:remove-todo='removeTodo'/>
     </ul>
@@ -11,7 +12,7 @@
 </template>
 
 <script>
-import TodoItem from './TodoItem.vue'
+import TodoItem from '@/TodoItem.vue'
 
 export default {
   props: ['todos'],
