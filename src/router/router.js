@@ -33,7 +33,7 @@ const routes = [
   },
   {
     path: '/todos',
-    component: () => import('./views/Todos.vue'),
+    component: () => import('@/views/Todos.vue'),
     // component: './views/Todos.vue',
     // component: Todos,
   },

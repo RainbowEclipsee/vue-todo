@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import TodoItem from '@/TodoItem.vue'
+import TodoItem from './TodoItem.vue'
 
 export default {
   props: ['todos'],

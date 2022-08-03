@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router/router.js'
+import router from '@/router/router'
 // import Vue from 'vue'
 
 // Vue.config.productionTip = false
@@ -10,4 +10,8 @@ import router from './router/router.js'
 //   render: (h) => App,
 // }).$mount('#app')
 
-createApp(App).use(router).mount('#app')
+// createApp(App).use(router).mount('#app')
+
+const app = createApp(App)
+
+app.use(router).mount('#app')
